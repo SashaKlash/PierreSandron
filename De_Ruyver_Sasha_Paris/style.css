@@ -1,0 +1,102 @@
+* {
+    align-content: center;
+    margin: auto;
+    
+}
+
+body {
+    background-color: white;
+    width: 1280px;
+}
+
+header {
+    width: 1280px;
+    height: 493px;
+    margin: auto;
+}
+
+.sousLeMenu {
+    background-color: #a90331;
+    text-align: center;
+    font-style: italic;
+}
+
+section {
+    width: 1280px;
+    background-color: lightgrey;
+    border-style: hidden;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    margin: 20px;
+    
+}
+
+article {
+    font-size: 20px;
+    margin: 20px 30px 20px 30px;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+nav {
+
+    width: 1280px;
+    height: 50px;
+    margin: 10px, 0px, 10px, 0px;
+    border-color: black;
+    border-style:solid;
+    border-radius: 10px;
+    background-color: #CCC;
+    position: sticky;
+    top: 0px;
+    
+}
+
+.photoSousMenu {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav ul li {
+    
+    width: 1280 px;
+    display:inline;
+    text-align: justify;
+}
+
+div ul li a {
+    color: #a90331;
+    align-content: center;
+    display: block;
+    text-decoration: none;
+    }
+
+div ul li a:hover {
+    color: black
+}
+
+table #galeriePhotos {
+    width: 90%;
+    margin: 20px 0px 20px 0px;
+}
+
+table tr td { 
+    border-style: solid;
+    border: 2px;
+}
+
+div#listeLiensVilles {
+    block-size: 620px;
+    font-size: 20px;
+    align-items: center;
+}
+
+p#liensCapitales {
+    color: black;
+}
