@@ -230,5 +230,5 @@ main h1{
 
 .liens {
     column-count: 3;
-    margin: 0 auto;
+    text-align: center;
 }
