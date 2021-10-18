@@ -184,6 +184,11 @@ main h1{
     max-height: 350px;
 }
 
+.galerie figcaption{
+    text-align: center;
+    font-size: 18px;
+}
+
 .contact{
     width: 620px;
     margin: 0 auto;
@@ -205,6 +210,16 @@ main h1{
 }
 
 .contact textarea{
+    height: 80px;
+    width: 400px;
+    resize: none;
+}
+
+.contact label[for="form1_message"]{
+    float: left;
+}
+
+.contact input[type="submit"]{
     height: 50px;
     width: 300px;
     margin-top: 30px;
