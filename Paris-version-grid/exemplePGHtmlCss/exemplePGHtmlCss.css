@@ -1,0 +1,19 @@
+.testImages .conteneur{
+    width: 80px;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testImages2 .conteneur{
+    width: 80px;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.icon{
+    width: 25%;
+    display: inline-block;
+}
