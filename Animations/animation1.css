@@ -1,0 +1,48 @@
+.object {
+    background-color: aquamarine;
+    color: orange;
+    font-size:2em;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius:50%;
+    text-align: center;
+
+    animation-name: roule;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-fill-mode:both;
+    animation-direction:alternate;
+    animation-timing-function:ease-in-out;
+}
+
+.object:hover{
+    animation-play-state:paused;
+}
+
+@keyframes roule{
+    0% {transform: translateX(0) rotate(0);}
+    20% {transform: translateX(-50px) rotate(-45deg);}
+    100% {transform: translateX(800px) rotate(720deg);}
+}
+
+.logo{
+    animation-name: logoHTML5;
+    animation-duration: 4s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.logo:hover{
+    animation-play-state:paused;
+}
+
+@keyframes logoHTML5{
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(1turn); /* Équivalent à rotateY(360deg);*/
+    }
+}

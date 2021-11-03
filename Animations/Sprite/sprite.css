@@ -1,0 +1,50 @@
+#sprite {
+    width: 200px;
+    overflow: hidden;
+}
+
+#sprite img {
+    position: relative;
+    animation: jongleur 2s infinite steps(11);
+}
+
+@keyframes jongleur{
+    from { left:0; }
+    to { left:-2200px; }
+}
+
+#oiseau {
+    width: 183px;
+    overflow: hidden;
+}
+
+#oiseau img {
+    position: relative;
+    animation: vol 2s infinite steps(14);
+}
+
+@keyframes vol {
+    from { left:0; }
+    to { left:-2562px; }
+}
+
+#course {
+    width: 128px;
+    overflow: hidden;
+    animation: avance 3s infinite linear;
+}
+
+#course img {
+    position: relative;
+    animation: coureur 0.5s infinite steps(8);
+}
+
+@keyframes coureur {
+    from { left:0; }
+    to { left:-1024px; }
+}
+
+@keyframes avance {
+    from {transform: translateX(-128px);}
+    to {transform: translateX(1440px);}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - ex 02</title>
+    <style>
+        #forme {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin: 50px;
+        }
+        #forme2 {
+            width: 100px;
+            height:100px;
+            background-color:red;
+            border: 1px solid black;
+            margin:50px;
+            text-align:center;
+            line-height:100px;
+            font-weight:bold;
+            /*animation*/
+            animation-name: carreTourne;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: 2;
+
+        }
+        @keyframes carreTourne{
+            0% {}
+            25% {background-color: blue; transform: translate(200px, 0px);}
+            50% {background-color: green; transform: translate(200px, 200px);}
+            75% {background-color: yellow; transform: translate(0, 200px);}
+            100% {background-color: red; transform: translate(0, 0);}
+        }
+    </style>
+</head>
+<body>
+    <h1>Transitions, transformations en CSS</h1>
+    <h2>Exercice 02</h2>
+    <p>Au survol du carré, appliquez une rotation de 180 degrés dans le sens horlogique et changez la couleur de fond de AQUA vers RED.</p>
+    <p><strong>Le tout se fera via des transitions : rotation immédiate sur 1 seconde et changement de couleur sur 2 secondes après un délai d'une seconde</strong></p>
+    <div id="forme"></div>
+
+    <h2>Exercice 03 - animation</h2>
+    <p>Créez une animation qui dure 4 secondes, qui démarre 1 seconde après le chargement de la page et qui se répète 2 fois :</p>
+    <ul>
+        <li>Le carré est "rouge", à sa position de départ.</li>
+        <li>1 seconde plus tard, il passe au "bleu" et s'est déplacé vers la droite de 200px.</li>
+        <li>1 seconde plus tard, il passe au "vert" et s'est déplacé vers le bas de 200px.</li>
+        <li>1 seconde plus tard, il passe au "jaune" et s'est déplacé vers la gauche de 200px.</li>
+        <li>1 seconde plus tard, il passe au "rouge" et s'est déplacé vers le haut de 200px.</li>
+    </ul>
+    <div id="forme2">On tourne !</div>
+
+</body>
+</html>

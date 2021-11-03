@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - ex 01</title>
+    <style>
+        #forme {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin: 50px;
+            text-align: center;
+            line-height:100px;
+
+            /* animation */
+            animation: animeCarre 2s 1s forwards;
+        }
+
+        /* définition des étapes de l'animation */
+        @keyframes animeCarre{
+            0% {transform: translateX(0) rotate(0);}
+            50% {transform: translateX(200px) rotate(0);}
+            100% {transform: translateX(200px) rotate(360deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Transitions, transformations en CSS</h1>
+    <h2>Exercice 01</h2>
+    <p>Au survol du carré, appliquez des transformations pour le déplacer de 200px vers la droite et 100px vers le bas, ainsi qu'une rotation de 45 degrés dans le sens horlogique.</p>
+    <p><strong>Le tout se fera via une transition qui durera 1 seconde.</strong></p>
+    <div id="forme">En avant !</div>
+</body>
+</html>
