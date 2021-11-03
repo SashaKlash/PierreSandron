@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation avec JavaScript</title>
+    <link rel="stylesheet" href="animation2.css">
+</head>
+<body>
+    <main>
+        <h1>Les animations avec CSS</h1>
+        <section class="object">
+            <h3>CSS3</h3>
+            <p>Animation</p>
+        </section>
+        <br>
+        <button onclick="anime();"">Animer le titre</button>
+    </main>
+
+    <script>
+        var leTitre = document.querySelector("main h1");
+
+        /* Définition des gestionnaires d'évènements. */
+        leTitre.addEventListener("animationstart", demarre, false);
+        leTitre.addEventListener("animationend", fini, false);
+        leTitre.addEventListener("animationiteration", compte, false);
+
+        function anime(){
+            console.log("Animation CSS : anime");
+            leTitre.style.animationName = "deplaceTitre";
+            /* On définit une valeurr pour la propriété animation-name ce qui permet le démarrage de l'animation. */
+        }
+
+        function demarre(e){
+            var monAnimation = e.animationName;
+            /* On récupère le nom de l'animation pour l'afficher. */
+            console.log("L'animation " + monAnimation + " démarre !");
+        }
+
+        function fini(){
+            console.log("Animation terminée.");
+            leTitre.style.animationName = "";
+            /* On supprime la valeur pour la propriété animaiton-name ce qui permet d'empêcher le fonctionnement de l'animation. */
+        }
+
+        function compte(){
+            console.log("l'animation recommence...");
+            /* À chaque itération, on affiche ce message. */
+        }
+    </script>
+</body>
+</html>
